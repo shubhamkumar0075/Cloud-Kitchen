@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        
+        }
+        div{
+            height: 50px;
+            width: 150px;
+            display: inline-block;
+            border: 2px solid black;
+        }
+        #container{
+            width: 700px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;/*we can use in row
+            like from left to right and row reverse is exactly oppsite
+            In case if boxes are more bigger than the border of the 
+            container than the boxes compress their sizes to get in the container*/  
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+            align-self: flex-end;
+
+        }
+        #box1{
+            background-color: pink;
+            flex-grow: 2;
+        }
+        #box2{
+            background-color: aqua;
+            height: 200px;
+            flex-grow: 1;
+        }
+        #box3{
+            background-color: darkkhaki;
+           
+        }
+        #box4{
+            background-color: indianred;
+        }
+        #box5{
+            background-color: slateblue;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox Playground</h1>
+    <div id="container">
+        <div id="box1">box1</div>
+        <div id="box2">box2</div>
+        <div id="box3">box3</div>
+        <div id="box4">box4</div>
+        <div id="box5">box5</div>
+       
+    </div>
+</body>
+</html>

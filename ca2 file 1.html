@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 400px;
+            height: 450px;
+            text-align: center;
+            border: 2px solid black;
+            padding: 15px;
+            background-color: rgb(78, 144, 203);
+            align-content: center;
+            flex-wrap: wrap;
+        
+        }
+        input[type="num"]{
+           width: 300px;
+           height: 10px;
+          
+           
+        }
+        input[type="text"]{
+           width: 300px;
+           height: 15px;
+           
+        }
+        button{
+            background-color: rgb(214, 61, 69);
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Fuel Efficiency Tracker</h1>
+        <br>
+        <label for="num"></label>
+        <input type="text" id="num" placeholder="Distance(miles or km)">
+        <br>
+        <label for ="text"></label>
+        <input type="num" id="text" placeholder="Fuels used(gallons or liters)">
+        <br>
+        <label for="payments">liters</label>
+        <select name="payment" id="payments">
+            <option value="RS."></option>
+        <label for="payments">gallons</label>
+        <select name="payment" id="payments">
+            <option value="RS."></option>
+        <button>calculate efficiency</button>
+        <br>
+        <h2>Trip history </h2>
+        <br>
+        <p>1000-50=2.00L/km</p>
+        <br>
+        <button>Clear history</button>
+  </div>
+</body>
+</html>
